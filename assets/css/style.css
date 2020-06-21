@@ -1,0 +1,1076 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+font-family: Poppins;
+font-weight: bold;
+font-size: 20px;
+line-height: 33px;
+display: flex;
+align-items: flex-end;
+color: #FFFFFF;
+}
+
+.logo1{
+font-family: Poppins;
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 33px;
+display: flex;
+align-items: flex-end;
+color: #FFFFFF;
+}
+
+/* Css of Navbar */
+.nav-item{
+    padding: 0px 35px;
+}
+
+.nav-link{
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 27px;
+color: #FFFFFF !important;
+}
+
+
+.dropdown-menu{
+    width: 234px ;
+    height: auto ;
+    top: 59px;
+    padding: 20px;
+    margin: 10px;
+    float: left !important;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    line-height: 2.5;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 0px;
+}
+
+  .dropdown-menu:after {
+    content: " ";
+    position: absolute;
+    right: 30px;
+    top: -15px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #FFFFFF;
+  }
+
+.dropdown-menu hr{
+    margin:  15px 5px;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .logo1, .logo{
+        font-size: 18px;
+    }
+    .nav-item{
+        padding: 0px 25px;
+    }
+
+    .nav-link{
+        font-size: 14px;
+        }
+
+        .dropdown-menu{
+            width: 220px;
+        }
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .logo1, .logo{
+        font-size: 16px;
+    }
+    .nav-item{
+        padding: 0px 0px;
+    }
+
+    .nav-link{
+        font-size: 12px;
+        }
+
+        .dropdown-menu::after{
+            right: 585px;
+            top: 38px;
+        }
+}
+
+@media screen and (max-width: 480px)
+{
+    .logo1, .logo{
+        font-size: 14px;
+    }
+    .nav-item{
+        padding: 0px 0px;
+    }
+
+    .nav-link{
+        font-size: 12px;
+        }
+
+        .dropdown-menu::after{
+            right: 242px;
+            top: 38px;
+        }
+}
+
+@media screen and (max-width: 375px)
+{
+        .dropdown-menu::after{
+            right: 193px;
+            top: 38px;
+        }
+}
+
+@media screen and (max-width: 320px)
+{
+
+        .dropdown-menu::after{
+            right: 137px;
+            top: 38px;
+        }
+}
+
+
+
+/* Css of Navbar */
+
+/* Css of Banner */
+.banner{
+    background-image: url("../images/background/banner.png");
+    background-color: azure;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb{
+    background-color: transparent;
+    padding-top: 20px;
+    font-family: Poppins;
+    font-size: 13px;
+}
+
+.breadcrumb a{
+    background-color: transparent;
+    font-family: Poppins;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.breadcrumb a:hover{
+    text-decoration: none;
+}
+
+.breadcrumb-item{
+    font-family: Poppins;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    display: inline-block;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    color:#FFFFFF;
+}
+
+.banner-heading h1{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 2;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.banner-heading h4{
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.banner-line{
+    width: 68px;
+    height: 5px;
+    background: #F7E05F;
+    margin: 0 auto 4rem auto;
+}
+
+.search-bar{
+    max-width: 500px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    font-family: Poppins;
+    border: 0px solid grey;
+    float: left;
+    width: 90%;
+    height: 56px;
+  }
+  
+  form.search button {
+    float: left;
+    width: 10%;
+    height: 56px;
+    padding: 10px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 17px;
+    border: 0px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  form.search button img {
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+  }
+
+input, button:focus{
+    outline: none !important;
+}
+
+.post-forum-button{
+    text-align: center;
+    padding: 16px;
+    width: 209px;
+    height: 56px;  
+    background:#1D1D1B;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.post-forum-button:hover{
+    background:  #F7E05F;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+.post-forum-button a:hover{
+text-decoration: none;
+
+}
+
+.post-forum-button a{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+}
+  
+
+
+  @media screen and (max-width:1024px) {
+
+    .banner{
+        height: 450px;
+    }
+
+    .banner-heading h1{
+        font-size: 35px;
+    }
+
+    .banner-line{
+        width: 64px;
+        height: 4px;
+        margin-bottom: 3rem;
+    }
+
+    .search-bar{
+        width: 40%;
+    }
+
+    form.search input[type=text] {
+        font-size: 14px; 
+        width: 85%;
+        height: 46px;
+      }
+      
+      form.search button {
+        width: 15%;
+        height: 46px;
+        font-size: 15px;
+      }
+    
+      form.search button img {
+          width: 26px;
+          height: 26px;
+      }
+
+      .banner-heading h4{
+        font-size: 16px;
+    }
+
+    .post-forum-button{
+        width: 185px;
+        height: 46px;  
+        padding: 13px;
+    }
+
+    .post-forum-button a{
+        font-size: 16px;
+    }
+
+  }
+  
+  @media screen and (max-width:768px) {
+
+    .banner{
+        height: 380px;
+    }
+
+    .banner-heading h1{
+        font-size: 25px;
+    }
+
+    .banner-line{
+        width: 60px;
+        height: 3px;
+        margin-bottom: 2rem;
+    }
+
+    .search-bar{
+        width: 35%;
+        height: 60px;
+    }
+
+    form.search input[type=text] {
+        font-size: 12px; 
+        width: 80%;
+        height: 36px;
+      }
+      
+      form.search button {
+        width: 20%;
+        height: 36px;
+        font-size: 13px;
+        padding: 7px 0px 7px 10px;
+      }
+    
+      form.search button img {
+          width: 22px;
+          height: 22px;
+      }
+
+      .banner-heading h4{
+        font-size: 14px;
+    }
+
+    .post-forum-button{
+        width: 155px;
+        height: 36px;  
+        padding: 6px;
+    }
+
+    .post-forum-button a{
+        font-size: 14px;
+    }
+
+  }
+  
+  @media screen and (max-width:480px) {
+
+    .banner{
+        height: 280px;
+    }
+
+    .breadcrumb a,
+    .breadcrumb-item{
+        font-size: 11px;
+    }
+
+    .banner-heading h1{
+        font-size: 20px;
+    }
+
+    .banner-line{
+        width: 35px;
+        height: 2px;
+        margin-bottom: 1.8rem;
+    }
+
+    .search-bar{
+        width: 185px;
+        height: 35px;
+    }
+
+    form.search input[type=text] {
+        font-size: 10px; 
+        width: 80%;
+        height: 26px;
+      }
+      
+      form.search button {
+        width: 20%;
+        height: 26px;
+        font-size: 11px;
+        padding: 5px 0px;
+
+      }
+    
+      form.search button img {
+          width: 18px;
+          height: 18px;
+      }
+
+      .banner-heading h4{
+        font-size: 12px;
+    }
+
+    .post-forum-button{
+        width: 125px;
+        height: 26px;  
+        padding: 0px;
+    }
+
+    .post-forum-button a{
+        font-size: 12px;
+    }
+
+
+  }
+
+/* Css of Banner */
+
+/* Css of image and para Section */
+
+.card-text{
+margin: 150px 26px;
+/* text-align: justify; */
+font-family: Poppins;
+font-weight: 300;
+font-size: 18px;
+line-height: 1.9;
+transition: 0.4s;
+}
+
+@media screen and (max-width:1024px) {
+    .card-text{
+        margin: 70px 26px;
+        font-size: 16px;
+        }
+  }
+  
+  @media screen and (max-width:768px) {
+    .card-text{
+        margin: 10px 26px;
+        font-size: 14px;
+        }
+
+  }
+  
+  @media screen and (max-width:480px) {
+    .card-text{
+        margin: 10px 26px;
+        font-size: 12px;
+        }
+
+  }
+
+/* Css of image and para Section */
+
+/* Css of categories section */
+.banner3{
+    background-image: url("../images/background/categories.png");
+    height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ban3-heading h1{
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Poppins;
+    font-weight: bold;
+    color: #1D1D1B;
+}
+
+
+.category-box{
+    margin-top: 70px;
+}
+
+.category-menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 25px;
+    background-color: #1D1D1B;
+    color: #FFFFFF !important;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.category-menu1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #1D1D1B;
+    color: #FFFFFF !important;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.category-menu1 a:hover{
+    text-decoration: none;
+}
+
+.category-menu1 a:hover{
+background-color: #ffffff;
+color: #1D1D1B !important;
+
+}
+
+.category-menu a:hover{
+    text-decoration: none;
+}
+
+.category-menu a:hover{
+background-color: #ffffff;
+color: #1D1D1B !important;
+
+}
+
+.menu-align{
+    margin-left: 240px;
+}
+
+.menu-align1{
+    margin-right: 300px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .category-menu a{
+      font-size: 15px;
+    }
+
+    .category-menu1 a{
+        font-size: 15px;
+        padding: 10px 12px;
+      }
+
+    .category-box{
+        margin-top: 65px;
+    }
+
+    .ban3-heading h1{
+        padding-top: 3rem;
+       font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .category-menu a{
+        font-size: 12px;
+        padding: 6px 9px;
+      }
+
+      .menu-align{
+        margin-left: 164px;
+    }
+
+    .menu-align1{
+        margin-right: 214px;
+    }
+
+      .category-menu1 a{
+        font-size: 12px;
+        padding: 6px 9px;
+      }
+      
+      .category-box{
+        margin-top: 55px;
+    }
+
+    .ban3-heading h1{
+        padding-top: 3rem;
+       font-size: 1.8rem;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .category-menu a{
+        font-size: 12px;
+    margin-bottom: 10px;
+    }
+    .menu-align{
+        margin-left: 0px;
+    }
+
+    .menu-align1{
+        margin-right: 0px;
+    }
+
+      .category-menu1 a{
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+      }
+    .category-box{
+        margin-top: 30px;
+    }
+
+    .ban3-heading h1{
+        padding-top: 2rem;
+       font-size: 1.5rem;
+    }
+  }
+
+/* Css of Categories Section */
+
+/* Css of Sub Categories Section */
+.category{
+    margin: 0px;
+}
+.category1{
+    margin-top: 4rem;
+}
+.category-heading h1{
+    padding-top: 4rem;
+    font-family: Poppins;
+    font-weight: bold;
+    color: #1D1D1B;
+    transition: 0.4s;
+}
+.post-forum-button2{
+    text-align: center;
+    padding: 16px;
+    width: 209px;
+    height: 56px;
+    float: right;  
+    background: #0028D0;
+    box-shadow: 0px 14px 27px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+.post-forum-button2 a:hover{
+text-decoration: none;
+
+}
+
+.post-forum-button2 a{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.sub-category-title{
+    margin: 40px 0px;
+    padding: 0px 15px;
+}
+
+ul.sub-category-title li{
+    justify-content: center;
+    display: inline;
+    padding: 10px 15px;
+    color: #1D1D1B;
+    background-color:#E1E1E1;
+    font-family: Poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 21px;
+    transition: 0.4s;
+}
+
+.category-list{
+    margin-top: 45px;
+    padding: 0px 15px;
+}
+
+.category-list1{
+    margin-top: 70px;
+}
+
+.space{
+    width: 100%;
+    height: 200px;
+}
+
+.badges {
+    display: inline-block;
+    float: right;
+    margin-right: 100px;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+color: #999999;
+transition: 0.4s;
+}
+
+ul.category-list li img{
+    width: 20px;
+    height: 20px;
+    filter: drop-shadow(0px 10px 8px rgba(0, 40, 208, 0.23));
+    -webkit-filter: drop-shadow(0px 10px 8px rgba(0, 40, 208, 0.23));
+    transition: 0.4s;
+}
+
+
+
+ul.category-list li{
+    padding: 30px 0px;
+    list-style-type: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #D1D3D5;
+    transition: 0.4s;
+}
+
+@media screen and (max-width:1024px) {
+    .category-heading h1{
+        font-size: 2rem;
+    }
+
+    ul.sub-category-title li{
+        padding: 8px 13px;
+        font-size: 18px;
+    }
+
+    .post-forum-button2{
+        padding: 13px;
+        width: 185px;
+        height: 46px;
+    }
+
+    .post-forum-button2 a{
+        font-size: 16px;
+    }
+
+    ul.category-list li{
+        font-size: 18px;
+    }
+
+    ul.category-list li img{
+        width: 19px;
+        height: 19px; 
+    }
+
+    .badges {
+    font-size: 10px;
+    }
+
+  }
+  
+  @media screen and (max-width:768px) {
+    .category-heading h1{
+        font-size: 1.8rem;
+    }
+
+    ul.sub-category-title li{
+        padding: 6px 11px;
+        font-size: 16px;
+    }
+
+    .post-forum-button2{
+        padding: 6px;
+        width: 155px;
+        height: 36px;
+    }
+
+    .post-forum-button2 a{
+        font-size: 14px;
+    }
+
+    ul.category-list li{
+        font-size: 16px;
+    }
+
+    ul.category-list li img{
+        width: 18px;
+        height: 18px; 
+    }
+
+    .badges {
+        font-size: 10px;
+        margin-right: 85px;
+        }
+
+
+  }
+  
+  @media screen and (max-width:480px) {
+    .category-heading h1{
+        font-size: 1.5rem;
+    }
+
+    .category1{
+        margin-top: 1rem;
+    }
+
+    ul.sub-category-title li{
+        padding: 4px 9px;
+        font-size: 14px;
+    }
+
+    .post-forum-button2{
+        padding: 6px;
+        width: 155px;
+        height: 36px;
+        float: none;
+    }
+
+    .post-forum-button2 a{
+        font-size: 14px;
+    }
+
+    ul.category-list li{
+        font-size: 12px;
+    }
+
+    ul.category-list li img{
+        width: 17px;
+        height: 17px; 
+    }
+
+    .badges {
+        font-size: 8px;
+        margin-right: 10px;
+        }
+
+  }
+
+/* Css of Sub Categories Section */
+
+
+/* Css of Footer section */
+
+.fo-design{
+    background-color: #1D1D1B;
+    padding: 30px 60px;
+	height: auto;
+    overflow: hidden;
+}
+
+
+.f-align img{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	width: 182px;
+    height: 70px;
+    transition: 0.4s;
+}
+
+
+.f-align p{
+    text-align: left;
+    width: 67%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    transition: 0.4s;
+}
+
+.icon-size{
+    font-size: 35px;
+}
+
+
+.f-align1 ul{
+    list-style-type: none;
+	font-family: Poppins;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 18px;
+	text-align: left;
+    line-height: 3;
+    margin-top: 80px;
+    transition: 0.4s;
+}
+
+.f-align2 ul{
+    list-style-type: none;
+	font-family: Poppins;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 18px;
+	text-align: left;
+    line-height: 4;
+    margin-top: 80px;
+    transition: 0.4s;
+}
+
+.f-align2 ul a li:hover{
+text-decoration: none;
+}
+
+.fo-footer{
+    background: #000000;
+}
+
+.fo-footer p{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 0px;
+    transition: 0.4s;
+}
+
+
+@media screen and (max-width:1024px) {
+    .fo-design{
+        padding: 20px 50px;
+    }
+    
+    .f-align img{
+        width: 172px;
+        height: 60px;
+    }
+
+    .f-align p{
+        width: 92%;
+        font-size: 12px;
+    }
+
+    .f-align1 ul{
+        font-size: 16px;
+    }
+    
+    .f-align2 ul{
+        font-size: 16px;
+    }
+
+    .icon-size{
+        font-size: 30px;
+    }
+
+    .fo-footer p{
+        font-size: 16px;
+    }
+
+  }
+  
+  @media screen and (max-width:768px) {
+
+    .fo-design{
+        padding: 10px 40px;
+    }
+    
+    .f-align img{
+        width: 162px;
+        height: 50px;
+    }
+
+    .f-align p{
+        width: 97%;
+        font-size: 11px;
+    }
+
+    .f-align1 ul{
+        font-size: 14px;
+    }
+    
+    .f-align2 ul{
+        font-size: 14px;
+    }
+
+    .icon-size{
+        font-size: 25px;
+    }
+
+    .fo-footer p{
+        font-size: 14px;
+    }
+
+  }
+  
+  @media screen and (max-width:480px) {
+    .fo-design{
+        padding: 10px 30px;
+    }
+    
+    .f-align img{
+        width: 182px;
+        height: 70px;
+    }
+
+    .f-align p{
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .f-align1 ul{
+        font-size: 12px;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+    
+    .f-align2 ul{
+        font-size: 12px;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    .icon-size{
+        font-size: 20px;
+    }
+
+    .fo-footer p{
+        font-size: 12px;
+    }
+
+  }
+
+  /* Css of Footer section */
